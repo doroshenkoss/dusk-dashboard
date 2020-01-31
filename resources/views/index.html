@@ -260,7 +260,12 @@
                 }
 
                 if (message.name === 'dusk-failure') {
-                    this.events[(this.events.length -1 )].failure = message.data.message;
+                    this.events = this.events.map((event, index) => (
+                        index === this.events.length - 1 ? {
+                            ...event,
+                            failure: message.data.message
+                        } : event
+                    ));
                 }
 
                 if (message.name === 'dusk-reset') {
