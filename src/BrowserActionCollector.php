@@ -35,7 +35,8 @@ class BrowserActionCollector
             'name' => $action->getName(),
             'arguments' => $action->getArguments(),
             'before' => $action->getPreviousHtml(),
-            'html' => $action->getHtml(),
+//            'html' => $action->getHtml(),
+            'html' => '',
         ]);
 
         $this->processPerformanceLog($browser);

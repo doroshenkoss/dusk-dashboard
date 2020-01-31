@@ -2,16 +2,16 @@
 
 namespace BeyondCode\DuskDashboard\Testing;
 
-use BeyondCode\DuskDashboard\BrowserActionCollector;
-use BeyondCode\DuskDashboard\Console\StartDashboardCommand;
-use BeyondCode\DuskDashboard\Dusk\Browser;
 use Closure;
-use Facebook\WebDriver\Chrome\ChromeOptions;
-use Facebook\WebDriver\Remote\DesiredCapabilities;
+use Throwable;
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
+use BeyondCode\DuskDashboard\Dusk\Browser;
 use Laravel\Dusk\TestCase as BaseTestCase;
-use Throwable;
+use Facebook\WebDriver\Chrome\ChromeOptions;
+use Facebook\WebDriver\Remote\DesiredCapabilities;
+use BeyondCode\DuskDashboard\BrowserActionCollector;
+use BeyondCode\DuskDashboard\Console\StartDashboardCommand;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -23,7 +23,7 @@ abstract class TestCase extends BaseTestCase
      */
     protected function newBrowser($driver)
     {
-        return new Browser($driver);
+        return new Browser($driver, null, $this->getTestName());
     }
 
     /**
@@ -71,7 +71,7 @@ abstract class TestCase extends BaseTestCase
         return $capabilities;
     }
 
-    protected function onNotSuccessfulTest(Throwable $t): void
+    protected function onNotSuccessfulTest(Throwable $t)
     {
         try {
             (new Client())->post('http://127.0.0.1:'.StartDashboardCommand::PORT.'/events', [
