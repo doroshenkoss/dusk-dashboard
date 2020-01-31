@@ -24,7 +24,7 @@ use Laravel\Dusk\TestCase as BaseTestCase;
 ```
 with:
 ```php
-use BeyondCode\DuskDashboard\Testing\TestCase as BaseTestCase;
+use AutoDash\DuskDashboard\Testing\TestCase as BaseTestCase;
 ```
 
 ## Usage

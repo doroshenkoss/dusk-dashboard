@@ -28,12 +28,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BeyondCode\\DuskDashboard\\": "src"
+            "AutoDash\\DuskDashboard\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BeyondCode\\DuskDashboard\\Tests\\": "tests"
+            "AutoDash\\DuskDashboard\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -47,7 +47,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "BeyondCode\\DuskDashboard\\DuskDashboardServiceProvider"
+                "AutoDash\\DuskDashboard\\DuskDashboardServiceProvider"
             ]
         }
     }

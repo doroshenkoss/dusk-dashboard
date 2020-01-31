@@ -1,8 +1,8 @@
 <?php
 
-namespace BeyondCode\DuskDashboard\Dusk;
+namespace AutoDash\DuskDashboard\Dusk;
 
-use BeyondCode\DuskDashboard\BrowserActionCollector;
+use AutoDash\DuskDashboard\BrowserActionCollector;
 use Laravel\Dusk\Component;
 use Laravel\Dusk\ElementResolver;
 

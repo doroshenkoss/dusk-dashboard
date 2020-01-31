@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\DuskDashboard\Dusk\Concerns;
+namespace AutoDash\DuskDashboard\Dusk\Concerns;
 
 trait MakesUrlAssertions
 {

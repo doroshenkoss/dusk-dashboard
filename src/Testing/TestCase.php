@@ -1,17 +1,17 @@
 <?php
 
-namespace BeyondCode\DuskDashboard\Testing;
+namespace AutoDash\DuskDashboard\Testing;
 
 use Closure;
 use Throwable;
 use GuzzleHttp\Client;
 use GuzzleHttp\RequestOptions;
-use BeyondCode\DuskDashboard\Dusk\Browser;
+use AutoDash\DuskDashboard\Dusk\Browser;
 use Laravel\Dusk\TestCase as BaseTestCase;
 use Facebook\WebDriver\Chrome\ChromeOptions;
 use Facebook\WebDriver\Remote\DesiredCapabilities;
-use BeyondCode\DuskDashboard\BrowserActionCollector;
-use BeyondCode\DuskDashboard\Console\StartDashboardCommand;
+use AutoDash\DuskDashboard\BrowserActionCollector;
+use AutoDash\DuskDashboard\Console\StartDashboardCommand;
 
 abstract class TestCase extends BaseTestCase
 {
@@ -19,7 +19,7 @@ abstract class TestCase extends BaseTestCase
      * Create a new Browser instance.
      *
      * @param  \Facebook\WebDriver\Remote\RemoteWebDriver  $driver
-     * @return \BeyondCode\DuskDashboard\Dusk\Browser
+     * @return \AutoDash\DuskDashboard\Dusk\Browser
      */
     protected function newBrowser($driver)
     {

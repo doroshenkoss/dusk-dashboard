@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\DuskDashboard\Ratchet\Http;
+namespace AutoDash\DuskDashboard\Ratchet\Http;
 
 use Exception;
 use Ratchet\ConnectionInterface;

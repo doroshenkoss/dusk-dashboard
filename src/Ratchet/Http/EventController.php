@@ -1,8 +1,8 @@
 <?php
 
-namespace BeyondCode\DuskDashboard\Ratchet\Http;
+namespace AutoDash\DuskDashboard\Ratchet\Http;
 
-use BeyondCode\DuskDashboard\Ratchet\Socket;
+use AutoDash\DuskDashboard\Ratchet\Socket;
 use Exception;
 use GuzzleHttp\Psr7\Response;
 use function GuzzleHttp\Psr7\str;

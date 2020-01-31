@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\DuskDashboard;
+namespace AutoDash\DuskDashboard;
 
 use Symfony\Component\Process\Process;
 

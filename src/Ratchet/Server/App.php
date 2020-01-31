@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\DuskDashboard\Ratchet\Server;
+namespace AutoDash\DuskDashboard\Ratchet\Server;
 
 use Ratchet\Http\Router;
 use Ratchet\Server\IoServer;

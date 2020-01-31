@@ -1,6 +1,6 @@
 <?php
 
-namespace BeyondCode\DuskDashboard\Ratchet\Http;
+namespace AutoDash\DuskDashboard\Ratchet\Http;
 
 use GuzzleHttp\Psr7\Response;
 use function GuzzleHttp\Psr7\str;
