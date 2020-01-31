@@ -1,17 +1,14 @@
 {
-    "name": "beyondcode/dusk-dashboard",
-    "description": "A beautiful dashboard for your Laravel Dusk tests",
+    "name": "doroshenkoss/dusk-dashboard",
+    "description": "Dashboard for your Laravel Dusk tests",
     "keywords": [
-        "beyondcode",
         "dusk-dashboard"
     ],
-    "homepage": "https://github.com/beyondcode/dusk-dashboard",
+    "homepage": "https://github.com/doroshenkoss/dusk-dashboard",
     "license": "MIT",
     "authors": [
         {
-            "name": "Marcel Pociot",
-            "email": "marcel@beyondco.de",
-            "homepage": "https://beyondcode.de",
+            "name": "Serjio Doroshenko",
             "role": "Developer"
         }
     ],
